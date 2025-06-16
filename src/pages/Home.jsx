@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-  const navigate = () => console.log("Navigate to menu");
+  const navigate = useNavigate();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Scroll to top when component mounts (page navigation)
